@@ -2,7 +2,7 @@
 body {
     font-family: 'Courier New';
     /* background-color: #FFF518; */
-    background-color: #1a1a1afa; 
+    background-color: #1a1a1afa;
     color: black;
     margin: 0;
     padding: 0;
@@ -28,7 +28,7 @@ body.dark_mode {
 
     display: grid;
     grid-template-columns: repeat(11, 1fr);
-    border-bottom: 1px solid rgb(39, 150, 224);
+    border-bottom: 1px solid #006b7e;
 }
 #title {
     font-family: "Verdana";
@@ -36,14 +36,14 @@ body.dark_mode {
     grid-column-start: 1;
     grid-column-end: 2;
     font-size: 35px;
-    color: rgb(39, 150, 224);
+    color: #006b7e;
     min-width: 75px;
     margin-top: 25px;
     margin-left: 20px;
 }
 
 #firstName {
-    text-shadow: -1px 0px 0px rgb(39, 150, 224), 1px 0px 0px rgb(39, 150, 224), 0px -1px 0px rgb(39, 150, 224), 0px 1px 0px rgb(39, 150, 224);
+    text-shadow: -1px 0px 0px #006b7e, 1px 0px 0px #006b7e, 0px -1px 0px #006b7e, 0px 1px 0px #006b7e;
     color: #1a1a1afa;
 }
 
@@ -60,7 +60,7 @@ body.dark_mode {
 .nav a {
     font-family: "Arial";
     font-size: 14px;
-    border: 1px solid rgb(39, 150, 224);
+    border: 1px solid #006b7e;
     
     margin-left: 20px;
     margin-right: 20px;
@@ -72,7 +72,7 @@ body.dark_mode {
 
     color: white;
     background-color: transparent;
-    box-shadow: 0px 0px 6px rgb(39, 150, 224);
+    box-shadow: 0px 0px 6px #006b7e;
     text-decoration: none;
 
     /* puts text in center of btn */
@@ -84,13 +84,14 @@ body.dark_mode {
 }
 
 .nav a:hover {
-    background-color: rgb(39, 150, 224);
+    background-color: #006b7e;
     color: white;
     transition: 0.5s ease;
 }
 
 .nav .active {
-    background-color: rgb(39, 150, 224);
+     /* original color: rgb(39, 150, 224), #005d6e */
+    background-color: #006b7e;
     transition: background-color 0.5s ease;
     color: white;
 }
@@ -112,7 +113,7 @@ body.dark_mode {
     margin-right: 20px;
     margin-top: 30px;
 
-    background-color: rgb(27, 39, 197);
+    background-color: #006b7e;
   }
   
   /* Hide default HTML checkbox */
@@ -178,7 +179,8 @@ body.dark_mode {
 
             padding: 4px;
 
-            border: 1px solid rgb(39, 150, 224);
+            border: 1px solid #006b7e;
+            /* original color: rgb(39, 150, 224) */
         }
         #first {
             grid-column-start: 3;
@@ -189,7 +191,7 @@ body.dark_mode {
             font-size: 35px;
         }
         hr {
-            border-color: rgb(39, 150, 224);
+            border-color: #006b7e;
         }
         .intro {
             grid-column-start: 3;
@@ -206,7 +208,7 @@ body.dark_mode {
 
 
         span {
-            color: rgb(39, 150, 224);
+            color: #006b7e;
         }
 
         #skills {
@@ -238,7 +240,7 @@ body.dark_mode {
                     }
                 }
                 .reactSkill img:hover {
-                    filter: contrast(0) brightness(0.9) invert(.7) sepia(.5) hue-rotate(160deg) saturate(500%);
+                    filter: contrast(0) brightness(0.9) invert(.7) sepia(.3) hue-rotate(150deg) saturate(700%);
                 }
             
             .javascriptSkill {
@@ -255,7 +257,7 @@ body.dark_mode {
                     filter: brightness(0) invert(1);
                 }
                 .javascriptSkill img:hover {
-                    filter: contrast(0) brightness(0.9) invert(.7) sepia(.5) hue-rotate(160deg) saturate(500%);
+                    filter: contrast(0) brightness(0.9) invert(.7) sepia(.3) hue-rotate(150deg) saturate(700%);
                 }
             
             .expressSkill {
@@ -283,7 +285,7 @@ body.dark_mode {
                     margin-bottom: -10px;
                 }
                 .expressSkill #expressLogo:hover {
-                    filter: contrast(0) brightness(0.9) invert(.7) sepia(.5) hue-rotate(160deg) saturate(500%);
+                    filter: contrast(0) brightness(0.9) invert(.7) sepia(.3) hue-rotate(150deg) saturate(700%);
                 }
             
             .sqlSkill {
@@ -300,7 +302,7 @@ body.dark_mode {
                     margin-bottom: -12px;
                 }
                 .sqlSkill img:hover {
-                    filter: contrast(0) brightness(0.9) invert(.7) sepia(.5) hue-rotate(160deg) saturate(500%);
+                    filter: contrast(0) brightness(0.9) invert(.7) sepia(.3) hue-rotate(150deg) saturate(700%);
                 }
             .pythonSkill {
                 grid-column: 7 / 8;
@@ -316,7 +318,7 @@ body.dark_mode {
                     margin-bottom: -5px;
                 }
                 .pythonSkill img:hover {
-                    filter: contrast(0) brightness(0.9) invert(.7) sepia(.5) hue-rotate(160deg) saturate(500%);
+                    filter: contrast(0) brightness(0.9) invert(.7) sepia(.3) hue-rotate(150deg) saturate(700%);
                 }
 
             .cSkill {
@@ -333,7 +335,7 @@ body.dark_mode {
                     margin-bottom: -5px;
                 }
                 .cSkill img:hover {
-                    filter: contrast(0) brightness(0.9) invert(.7) sepia(.5) hue-rotate(160deg) saturate(500%);
+                    filter: contrast(0) brightness(0.9) invert(.7) sepia(.3) hue-rotate(150deg) saturate(700%);
                 }
             .htmlSkill {
                 grid-column: 3 / 4;
@@ -350,7 +352,7 @@ body.dark_mode {
                     margin-bottom: -10px;
                 }
                 .htmlSkill img:hover {
-                    filter: contrast(0) brightness(0.9) invert(.7) sepia(.5) hue-rotate(160deg) saturate(500%);
+                    filter: contrast(0) brightness(0.9) invert(.7) sepia(.3) hue-rotate(150deg) saturate(700%);
                 }
             .cssSkill {
                 grid-column: 4 / 5;
@@ -367,7 +369,7 @@ body.dark_mode {
                     margin-bottom: -5px;
                 }
                 .cssSkill img:hover {
-                    filter: contrast(0) brightness(0.9) invert(.7) sepia(.5) hue-rotate(160deg) saturate(500%);
+                    filter: contrast(0) brightness(0.9) invert(.7) sepia(.3) hue-rotate(150deg) saturate(700%);
                 }
 
         #eduTitle {
@@ -425,7 +427,7 @@ body.dark_mode {
             filter: brightness(0) invert(1);
         }
             .footer img:hover {
-                filter: contrast(0) brightness(0.9) invert(.7) sepia(.5) hue-rotate(100deg) saturate(400%);
+                filter: contrast(0) brightness(0.9) invert(.7) sepia(.3) hue-rotate(150deg) saturate(700%);
             }
 /* end of main body */
 
@@ -467,7 +469,7 @@ body.dark_mode {
     grid-row: 2 / 3;
 
     padding-right: 50px;
-    border-right: 1px solid rgb(39, 150, 224);
+    border-right: 1px solid #006b7e;
 }
 
 
@@ -476,7 +478,7 @@ body.dark_mode {
     grid-row: 3 / 5;
 
     padding-right: 50px;
-    border-right: 1px solid rgb(39, 150, 224);
+    border-right: 1px solid #006b7e;
     padding-top: 20px;
 }
 
@@ -485,7 +487,7 @@ body.dark_mode {
     grid-row: 5 / 6;
 
     padding-right: 50px;
-    border-right: 1px solid rgb(39, 150, 224);
+    border-right: 1px solid #006b7e;
 }
 
 .todoAuth {
@@ -493,7 +495,7 @@ body.dark_mode {
     grid-row: 6 / 8;
 
     padding-right: 50px;
-    border-right: 1px solid rgb(39, 150, 224);
+    border-right: 1px solid #006b7e;
     padding-top: 40px;
 }
 
@@ -502,7 +504,7 @@ body.dark_mode {
     grid-row: 8 / 10;
 
     padding-right: 50px;
-    border-right: 1px solid rgb(39, 150, 224);
+    border-right: 1px solid #006b7e;
     padding-top: 20px;
 }
 
@@ -538,7 +540,7 @@ body.dark_mode {
 .resume a {
     font-family: "Arial";
     font-size: 14px;
-    border: 1px solid rgb(39, 150, 224);
+    border: 1px solid #006b7e;
     
     margin-left: 20px;
     margin-right: 20px;
@@ -550,7 +552,7 @@ body.dark_mode {
 
     color: white;
     background-color: #1a1a1afa;
-    box-shadow: 0px 0px 6px rgb(39, 150, 224);
+    box-shadow: 0px 0px 6px #006b7e;
     text-decoration: none;
 
     /* puts text in center of btn */
@@ -562,7 +564,7 @@ body.dark_mode {
 }
 
 .resume a:hover {
-    background-color: rgb(39, 150, 224);
+    background-color: #006b7e;
     transition: 0.5s ease;
 }
 
