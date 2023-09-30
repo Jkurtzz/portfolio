@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400, 600' rel='stylesheet' type='text/css'>
+    <link href='style.css' rel='stylesheet' type='text/css'/>
+    <script src="index.js"></script>
+    <title>Joseph Kurtz Projects</title>
+</head>
+<body onload="getMode()">
+    <div class="header">
+        <div id="title">
+            <span id="firstName">Joe</span>Kurtz
+        </div>
+        <div class ="nav">
+                <a href="./index.html">Home</a>
+                <a class = "active" href="./projects.html">Projects</a>
+                <a href="./resume.html">Resume</a>
+        </div>
+        <label class="switch">
+            <input type="checkbox">
+            <div class="slider" onclick="toggleMode()"></div>
+        </label>
+    </div>
+    <div class="main">
+            
+        <div class="info">
+            <h1 id = "second">
+                Projects <hr>
+            </h1>
+            <div class="todoApp">
+                <h3 id="todoTitle">To-Do List Full-Stack Web Application</h3>
+                <div class="todoPurpose">
+                    <h4>Purpose:<hr></h4>
+                    <p>The purpose of this project is to learn and demonstrate 
+                        the necessary skills of a full-stack engineer.
+                    </p>
+                </div>
+                <div class="todoOverview">
+                    <h4>Overview:<hr></h4>
+                    <p>This project was done to demonstrate the necessary skills of a full-stack engineer like setting up a database, 
+                        creating a front-end user interface, and connecting the two with an api. <br>
+                        User authentication was implemented with hashed passwords, sessions, and Json Web Tokens. <br>
+                    </p>
+                </div>
+                <div class="todoLang">
+                    <h4>Languages:<hr></h4>
+                    <p>This app uses a <span>MySQL</span> database. <br>
+                        The api was written using <span>Express.js</span>. <br>
+                        The front-end was written using <span>React.js</span>.
+                    </p>
+                </div>
+                <div class="todoAuth">
+                    <h4>Security and Authentication:<hr></h4>
+                    <p>The app uses three levels of authentication. 
+                        Using the <span>Node.js</span> crypto library, the 
+                        user's information was hashed using the sha512 hashing algorithm.
+                        <span>Passport-Local</span> was used to serialize and deserialize 
+                        users into sessions. Finally, <span>Passport-JWT</span> was used to
+                        sign and validate Json Web Tokens with an RSA key pair.
+                    </p>
+                </div>
+                <div class="todoPub">
+                    <h4>Publication:<hr></h4>
+                    <p>The app was published using <span>Amazon Web Services</span> (AWS).
+                        I purchased a domain name and received an SSL/TLS certificate for it. 
+                        My app was then hosted on an EC2 instance and an Application Load Balancer 
+                        connected the domain to the instance. 
+                    </p>
+                </div>
+                <div class="todoDemo">
+                    <h4>Video Demo:<hr></h4>
+                    <video width="700" controls autoplay muted>
+                        <source src="C:\jobSearch\portfolio\ToDoAppDemo.mp4">
+                    </video>
+                </div>
+                <div class="todoLinks">
+                </div>
+                <div class="todoPic">
+
+                </div>
+            </div>
+        </div>
+
+        
+      </div>
+    
+</body>
+</html>
