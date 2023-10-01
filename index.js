@@ -18,4 +18,13 @@ function getMode() {
      }
 }
 
-   
+// opens the navBar on mobile devices
+function openNav() {
+     let navBarTransition = document.getElementsByClassName("nav")[0];
+     navBarTransition.classList.toggle("openMobile");
+     let navBarLst = document.getElementsByClassName("navBtn");
+     for (i = 0; i < navBarLst.length; i++){
+          navBarLst[i].classList.toggle("openMobile");
+     }
+     
+}

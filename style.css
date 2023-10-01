@@ -57,6 +57,11 @@ body.dark_mode {
     align-items: center;
 }
 
+#openNav {
+    /* this is only used for the mobile version */
+    visibility: hidden;
+}
+
 .nav a {
     font-family: "Arial";
     font-size: 14px;
@@ -218,12 +223,16 @@ body.dark_mode {
             grid-row-end: 11;
             margin-right: 110px;
         }
+        #skills hr {
+            min-width: 750px;
+        }
             .reactSkill {
                 grid-column: 4 / 5;
                 grid-row: 11 / 12;
                 /* border: 1px solid red; */
                 align-items: center;
                 text-align: center;
+                min-width: 100px;
             }
                 .reactSkill img {
                     height: auto;
@@ -249,6 +258,7 @@ body.dark_mode {
                 /* border: 1px solid red; */
                 align-items: center;
                 text-align: center;
+                min-width: 100px;
             }
                 .javascriptSkill img {
                     height: auto;
@@ -266,6 +276,7 @@ body.dark_mode {
                 /* border: 1px solid red; */
                 align-items: center;
                 justify-self: center;
+                min-width: 100px;
             }
                 .expressSkill #expressLogo {
                     font-family: "Arial";
@@ -294,6 +305,7 @@ body.dark_mode {
                 /* border: 1px solid red; */
                 align-items: center;
                 text-align: center;
+                min-width: 100px;
             }
                 .sqlSkill img {
                     height: auto;
@@ -310,6 +322,7 @@ body.dark_mode {
                 /* border: 1px solid red; */
                 align-items: center;
                 text-align: center;
+                min-width: 100px;
             }
                 .pythonSkill img {
                     height: auto;
@@ -327,6 +340,7 @@ body.dark_mode {
                 /* border: 1px solid red; */
                 align-items: center;
                 text-align: center;
+                min-width: 100px;
             }
                 .cSkill img {
                     height: auto;
@@ -343,6 +357,7 @@ body.dark_mode {
                 /* border: 1px solid red; */
                 align-items: center;
                 text-align: center;
+                min-width: 100px;
             }
                 .htmlSkill img {
                     height: auto;
@@ -360,6 +375,7 @@ body.dark_mode {
                 /* border: 1px solid red; */
                 align-items: center;
                 text-align: center;
+                min-width: 100px;
             }
                 .cssSkill img {
                     height: auto;
@@ -380,22 +396,45 @@ body.dark_mode {
             margin-right: 110px;
         }
 
+        #eduTitle hr {
+            min-width: 750px;
+        }
+
+            .education {
+                grid-column: 3 / 10;
+                grid-row: 15 / 18;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: +3;
+                min-width: 300px;
+
+                display: grid;
+                grid-template-columns: 175px 625px;
+                grid-template-rows: 175px 250px;
+            }
+            
             #eduImg {
-                grid-column: 3 / 5;
-                grid-row: 15 / 17;
+                grid-column: 1 / 2;
+                grid-row: 1 / 2; 
 
                 margin-left: 50px;
                 background-color: white;
                 border-radius: 100px;
                 width: 150px;
+                min-width: 150px;
             }
-
-            .education {
-                grid-column: 4 / 9;
-                grid-row: 15 / 18;
+            #eduSchool {
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
                 margin-left: 80px;
-                font-family: 'Times New Roman', Times, serif;
-                font-size: +3;
+            }
+            .eduContent {
+                grid-column: 2 / 4;
+                grid-row: 1 / 3;
+
+                margin-left: 80px;
+                margin-top: 80px;
+                width: 100%;
+                min-width: 300px;
             }
             .education h2 {
                 font-size: 35px;
@@ -573,9 +612,376 @@ body.dark_mode {
     width: 750px;
 }
 
-
-
 img {
     height: auto;
     width: 100px;
+}
+
+/* start mobile settings */
+@media (max-width: 820px) {
+    body {
+        width: 100%;
+    }
+
+    .header {
+        min-width: 300px;
+        width: 100%;
+        height: 75px;
+
+        grid-column-start: 1;
+        grid-column-end: -1;
+
+        display: grid;
+        grid-template-columns: 33% 34% 33%;
+        grid-template-rows: 75px 125px;
+    }
+
+    .switch {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    #title {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: 100%;
+        height: 100px;
+    }
+
+    .nav {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        width: 100%;
+        min-width: 390px;
+        height: 0px;
+        /* overflow: hidden; */
+
+        transition: 0.75s ease;
+
+        border-bottom: 1px solid #006b7e;
+
+        display: grid;
+        grid-template-columns: 130px 130px 130px;
+        grid-template-rows: 33% 33% 33%;
+    }
+    .nav.openMobile {
+        height: 100%;
+    }
+
+    #openNav {
+        visibility: visible;
+        min-width: 35px;
+        height: 35px;
+
+        position: absolute;
+        left: 307px;
+        top: 33px;
+
+        background-color: #1a1a1afa;
+        border: none;
+    }
+
+    #openNav hr {
+        border: 1px solid #006b7e;
+        height: 1px;
+        background-color: #006b7e;
+        color: #006b7e;
+        border-radius: 10px;
+        margin: 4px 0;
+    }
+
+    .nav a {
+        visibility: hidden;
+        margin-left: 0px;
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+
+        grid-column: 1 / 2;
+    }
+
+    .nav .active {
+        background-color: #1a1a1afa;
+        color: #006b7e;
+    }
+
+    .navBtn.openMobile {
+        visibility: visible;
+    }
+
+    #indexBtn {
+        grid-row: 1 / 2;
+        z-index: 1;
+    }
+    #projBtn {
+        grid-row: 2 / 3;
+        z-index: 2;
+    }
+    #resBtn {
+        grid-row: 3 / 4;
+        z-index: 3;
+    }
+    /* main content section */
+    .info {
+        display: grid;
+        grid-template-columns: repeat(4, 97.5px);
+        grid-template-rows: repeat(16, 100px);
+        min-height: 1600px;
+        height: 1600px;
+    }
+    /* About me section */
+    #first {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        font-size: 20px;
+        margin: 10px 5px 5px 10px;
+    }
+    #first hr {
+        margin-top: 5px;
+        margin-right: 10px;
+        margin-left: -5px;
+    }
+
+    .intro {
+        grid-row: 3 / 5;
+        grid-column: 1 / 3;
+
+        font-size: 16px;
+        margin: -20px 10px 0px 20px;
+        float: right;
+        text-align: left;
+        font-weight: 100;
+    }
+
+    #profile {
+        grid-row: 2 / 5;
+        grid-column: 3 / -1;
+        min-height: 100px;
+        height: auto;
+        width: 185px;
+        max-width: 185px;
+        min-width: 180px;
+
+        margin-left: -5px;
+        margin-top: 10px;
+    }
+
+    #skills {
+        grid-row: 6 / 7;
+        grid-column: 1 / 5;
+        margin: 30px 10px 0px 10px;
+        font-size: 20px;
+    }
+
+    #skills hr {
+        min-width: 375px;
+        margin-left: -5px;
+        margin-top: 5px;
+    }
+    
+    .javascriptSkill {
+        grid-column: 1 / 2;
+        grid-row: 7 / 8;
+        /* border: 1px solid red; */
+        align-items: center;
+        text-align: center;
+        min-width: 90px;
+        margin-top: -10px;
+        font-size: 12px;
+    }
+    /* .javascriptSkill img {
+        width: 50px;
+        height: auto;
+    } */
+    .reactSkill {
+        grid-column: 2 / 3;
+        grid-row: 7 / 8;
+        /* border: 1px solid red; */
+        align-items: center;
+        text-align: center;
+        min-width: 90px;
+        margin-top: -10px;
+        font-size: 12px;
+    }
+    /* .reactSkill img {
+        width: 50px;
+        height: auto;
+    } */
+    .reactSkill p {
+        margin-top: 13px;
+    }
+    .expressSkill {
+        grid-column: 3 / 4;
+        grid-row: 7 / 8;
+        /* border: 1px solid red; */
+        align-items: center;
+        justify-self: center;
+        min-width: 90px;
+        margin-top: -12px;
+        margin-left: 17px;
+        font-size: 12px;
+    }
+    .expressSkill #expressCaption {
+        margin-left: 8px;
+        margin-top: 15px;
+        margin-bottom: -10px;
+    }
+    /* .expressSkill #expressLogo {
+        width: 50px;
+        height: 50px;
+        font-size: 35px;
+    } */
+    .sqlSkill {
+        grid-column: 4 / 5;
+        grid-row: 7 / 8;
+        /* border: 1px solid red; */
+        align-items: center;
+        text-align: center;
+        min-width: 90px;
+        margin-top: -10px;
+        font-size: 12px;
+    }
+    .sqlSkill p {
+        margin-top: 15px;
+    }
+
+    .pythonSkill {
+        grid-column: 1 / 2;
+        grid-row: 8 / 9;
+        /* border: 1px solid red; */
+        align-items: center;
+        text-align: center;
+        min-width: 90px;
+        margin-top: 5px;
+        font-size: 12px;
+    }
+
+    .cSkill {
+        grid-column: 2 / 3;
+        grid-row: 8 / 9;
+        /* border: 1px solid red; */
+        align-items: center;
+        text-align: center;
+        min-width: 90px;
+        margin-top: 5px;
+        font-size: 12px;
+    }
+
+    .htmlSkill {
+        grid-column: 3 / 4;
+        grid-row: 8 / 9;
+        /* border: 1px solid red; */
+        align-items: center;
+        text-align: center;
+        min-width: 90px;
+        margin-top: -10px;
+        font-size: 12px;
+    }
+
+    .htmlSkill p {
+        margin-top: 20px;
+    }
+
+    .cssSkill {
+        grid-column: 4 / 5;
+        grid-row: 8 / 9;
+        /* border: 1px solid red; */
+        align-items: center;
+        text-align: center;
+        min-width: 90px;
+        margin-top: -10px;
+        font-size: 12px;
+    }
+    .cssSkill p {
+        margin-top: 17px;
+    }
+
+    #eduTitle {
+        grid-column: 1 / 5;
+        grid-row: 10 / 11;
+        margin: 45px 10px 0px 10px;
+        font-size: 25px;
+    }
+
+    #eduTitle hr {
+        min-width: 100px;
+        margin-left: -5px;
+    }
+
+    .education {
+        grid-column: 1 / 5;
+        grid-row: 11 / 15;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: +3;
+        min-width: 300px;
+
+        margin-top: 20px;
+
+        display: grid;
+        grid-template-columns: 100px 290px;
+        grid-template-rows: 75px 300px;
+    }
+    
+    #eduImg {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2; 
+
+        margin-left: 22px;
+        background-color: white;
+        border-radius: 100px;
+        width: 75px;
+        min-width: 75px;
+    }
+
+    #eduSchool {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+
+        margin: 25px 0px 0px 10px;
+        width: 100%;
+        min-width: 100px;
+        font-size: 20px;
+    }
+
+    .eduContent {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+        margin-top: -5px;
+        margin-left: 30px;
+        width: 350px;
+    }
+
+    .education h2 {
+        font-size: 35px;
+    }
+    .eduContent h3 {
+        font-size: 16px;
+    }
+
+    .education li {
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+
+    .footer {
+        grid-column-start: 1;
+        grid-column-end: -1;
+        grid-row-start: 16; 
+        display: flex;
+        justify-content: right;
+        margin-right: 10px;
+    
+    }
+    
+    .footer img {
+        height:auto;
+        width: 50px;
+        margin-right: 10px;
+        filter: brightness(0) invert(1);
+    }
 }

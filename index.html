@@ -17,9 +17,10 @@
                 <span id="firstName">Joe</span>Kurtz
             </div>
             <div class ="nav">
-                    <a class="active" href="./index.html">Home</a>
-                    <a href="./projects.html">Projects</a>
-                    <a href="./resume.html">Resume</a>
+                    <button id="openNav" onclick="openNav()"><hr><hr><hr></button>
+                    <a class="navBtn active" id="indexBtn" href="./index.html">Home</a>
+                    <a class="navBtn" id="projBtn" href="./projects.html">Projects</a>
+                    <a class="navBtn" id="resBtn" href="./resume.html">Resume</a>
             </div>
             <div class="switch">
                 <input type="checkbox">
@@ -53,7 +54,7 @@
                     <div id="expressLogo">
                         <p>ex</p>
                     </div>
-                    <p>Express.js</p>
+                    <p id="expressCaption">Express.js</p>
                 </div>
                 <div class="sqlSkill">
                     <img src="sql.png">
@@ -82,25 +83,27 @@
 
                 <!-- edu -->
                 <h1 id="eduTitle">Education<hr></h1>
-                <img id="eduImg" src="pennStateCrest.png">
                 <div class="education">
-                    <h2>Pennsylvania State University</h2>
-                    <h3>Bachelor of Science in <span>Computer Science </span>from the College of Engineering</h3>
-                    <ul>
-                        <li>Graduated with a 3.77 GPA</li>
-                        <li>Athlete for Penn State's number-1 nationally-ranked Division 1 Wrestling Team for 3 years</li>
-                            <ul>
-                                <li>Became a Big Ten Distinguished Scholar while part of the team</li>
-                                <li>Academic All-Big Ten 3 semesters in a row</li>
-                                <li>Penn State Academic Excellence Award recipient</li>
-                            </ul>
-                        <li>Midshipman for the Navy ROTC Unit for 2 years</li>
+                    <img id="eduImg" src="pennStateCrest.png">
+                    <h2 id="eduSchool">Pennsylvania State University</h2>
+                    <div class="eduContent">
+                        <h3>Bachelor of Science in <span>Computer Science </span>from the College of Engineering</h3>
                         <ul>
-                            <li>Had the honor of being ranked of 3rd in class</li>
-                            <li>Held leadership positions of Squad Leader and Team Leader while in the unit</li>
+                            <li>Graduated with a 3.77 GPA</li>
+                            <li>Athlete for Penn State's number-1 nationally-ranked Division 1 Wrestling Team for 3 years</li>
+                                <ul>
+                                    <li>Became a Big Ten Distinguished Scholar while part of the team</li>
+                                    <li>Academic All-Big Ten 3 semesters in a row</li>
+                                    <li>Penn State Academic Excellence Award recipient</li>
+                                </ul>
+                            <li>Midshipman for the Navy ROTC Unit for 2 years</li>
+                            <ul>
+                                <li>Had the honor of being ranked of 3rd in class</li>
+                                <li>Held leadership positions of Squad Leader and Team Leader while in the unit</li>
+                            </ul>
+                            <li>Member of the crossfit club</li>
                         </ul>
-                        <li>Member of the crossfit club</li>
-                    </ul>
+                    </div>
                 </div>
             </div>
 
