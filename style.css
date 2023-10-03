@@ -804,7 +804,7 @@ img {
     #indexBtn {
         /* grid-row: 1 / 2; */
         z-index: 1;
-        margin-top: 1px;
+        margin-top: 2px;
     }
     #projBtn {
         /* grid-row: 2 / 3; */
@@ -864,7 +864,7 @@ img {
     #skills {
         grid-row: 6 / 7;
         grid-column: 1 / 5;
-        margin: 30px 10px 0px 10px;
+        margin: 30px 2% 0px 2%;
         font-size: 20px;
     }
 
