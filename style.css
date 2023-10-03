@@ -493,6 +493,7 @@ body.dark_mode {
     grid-template-rows: repeat(23, 100px);
     grid-template-columns: 100%;
     text-align: left;
+    position: relative;
 }
 
 #todoTitle {
@@ -557,10 +558,13 @@ body.dark_mode {
     margin-top: 50px;
     padding-left: 15px;
     transition: 1s ease;
+
+    position: absolute;
+    /* visibility: hidden; */
 }
 
 .todoContent.open {
-    height: 100%;
+    height: 90%;
 }
 
 .todoContent p {
@@ -1120,7 +1124,9 @@ img {
         grid-row: 8 / 55;
         margin-top: 15px;
     }
-
+    .todoContent.open {
+        height: 90%;
+    }
     #todoTitle {
         min-width: 360px;
         font-size: 18px;
