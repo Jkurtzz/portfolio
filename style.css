@@ -674,17 +674,22 @@ body.dark_mode {
 }
 .resume {
     grid-column-start: 4;
-    grid-column-end: 12;
+    grid-column-end: 9;
     grid-row-start: 4;
     grid-row-end: -1;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
 }
 .resume a {
     font-family: "Arial";
     font-size: 14px;
     border: 1px solid #006b7e;
     
-    margin-left: 20px;
-    margin-right: 20px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
     margin-top: 30px;
 
     width: 120px;
@@ -700,7 +705,6 @@ body.dark_mode {
     display: flex;
     justify-content: center;
     align-items: center;
-
     
 }
 
@@ -788,8 +792,8 @@ img {
     }
 
     #openNav hr {
-        width: 80%;
-        min-width: 80%;
+        width: 90%;
+        min-width: 90%;
         color: #006b7e;
         border: 1px solid #006b7e;
         background: transparent;
@@ -1150,6 +1154,12 @@ img {
     .openTodoContent {
         margin-left: 70%;
         margin-top: 0px;
+
+    }
+
+    .openTodoContent hr {
+        min-width: 90%;
+        width: 90%;
     }
 
     .todoContent {
@@ -1303,8 +1313,8 @@ img {
         font-size: 14px;
         border: 1px solid #006b7e;
         
-        margin-left: 135px;
-        margin-right: 20px;
+        /* margin-left: 135px;
+        margin-right: 20px; */
         margin-top: -30px;
     
         width: 120px;
@@ -1326,7 +1336,6 @@ img {
     #resumePic {
         height: auto;
         width: 370px;
-        margin-left: 10px;
     }
     
 }
