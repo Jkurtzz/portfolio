@@ -525,6 +525,7 @@ body.dark_mode {
     min-height: 40px;
     
     background-color: transparent;
+    border: none;
     margin-left: 90%;
     margin-top: 25px;
     grid-column: 2 / 3;
@@ -559,7 +560,7 @@ body.dark_mode {
 }
 
 .todoContent.open {
-    height: 90%;
+    height: 100%;
 }
 
 .todoContent p {
