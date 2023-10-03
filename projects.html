@@ -47,14 +47,14 @@
                     <div class="todoOverview">
                         <h4>Overview:<hr></h4>
                         <p>This project was done to demonstrate the necessary skills of a full-stack engineer like setting up a database, 
-                            creating a front-end user interface, and connecting the two with an api. <br>
-                            User authentication was implemented with hashed passwords, sessions, and Json Web Tokens. <br>
+                            creating a front-end user interface, and connecting the two with an API. <br>
+                            User authentication was implemented with hashed passwords, sessions, and JSON Web Tokens. <br>
                         </p>
                     </div>
                     <div class="todoLang">
                         <h4>Languages:<hr></h4>
                         <p>This app uses a <span>MySQL</span> database. <br>
-                            The api was written using <span>Express.js</span>. <br>
+                            The API was written using <span>Express.js</span>. <br>
                             The front-end was written using <span>React.js</span>.
                         </p>
                     </div>
@@ -65,7 +65,7 @@
                             user's information was hashed using the sha512 hashing algorithm.
                             <span>Passport-Local</span> was used to serialize and deserialize 
                             users into sessions. Finally, <span>Passport-JWT</span> was used to
-                            sign and validate Json Web Tokens with an RSA key pair.
+                            sign and validate JSON Web Tokens with an RSA key pair.
                         </p>
                     </div>
                     <div class="todoProcess">
@@ -73,19 +73,19 @@
                         <div>
                             <h5>General Process:<hr></h5>
                             <p>
-                                &emsp;Typically, the client makes an api fetch request with a payload stored in the body section 
+                                &emsp;Typically, the client makes an API fetch request with a payload stored in the body section 
                                 and the client's JSON-Web-Token and Session ID stored in cookies. 
                                 The API then uses middlware functions to verify the JSON-Web-Token and Session ID. 
-                                If either the JSON-Web-Token or Session ID are expired or invalid, the api call is stopped, 
+                                If either the JSON-Web-Token or Session ID is expired or invalid, the API call is stopped, 
                                 the client is sent back to the login page and their cookies are removed.
                                 If both pass, additional middlware functions are called to validate the payload.
-                                If any data is invalid, the api request is stopped and a failure message 
-                                with the corresponding error is sent back to the client in the form of a json. <br>
-                                &emsp; Once all middlware functions have been passed, the api performs the appropriate HTTP method to the database and 
+                                If any data is invalid, the API request is stopped and a failure message 
+                                with the corresponding error is sent back to the client in the form of a JSON. <br>
+                                &emsp; Once all middlware functions have been passed, the API performs the appropriate HTTP method to the database and 
                                 either retrieves, adds, edits or deletes data. 
-                                If this HTTP method fails for any reason, a failure message with the corresponding error is sent back to the client in the form of a json.
+                                If this HTTP method fails for any reason, a failure message with the corresponding error is sent back to the client in the form of a JSON.
                                 Upon failure, the front-end displays the error.
-                                If this HTTP method is successful, a success message and any requested data is sent back to the client in the form of a json.
+                                If this HTTP method is successful, a success message and any requested data is sent back to the client in the form of a JSON.
                                 Upon success, the front-end reacts and changes depending on the newly added, edited, retrieved or deleted data.
                                 Any action on the front-end that involves adding, editing, or deleting a ToDo or user information will follow this process.
                                 
@@ -95,13 +95,13 @@
                                 &emsp;When the client would like to make a new account, an API fetch request is made with the new user's information as the payload.
                                 The API then uses middleware functions to check if the username is available, if the password is at least 5 characters long and 
                                 contains a non-alphanumeric character, if the two entered passwords match, and if any fields were left blank. 
-                                If any of these checks fail, then the API request is stopped and a failure message with the corresponding error is sent back to the client.<br>
+                                If any of these checks fail, the API request is stopped and a failure message with the corresponding error is sent back to the client.<br>
                                 &emsp;If all middleware functions have been passed, the entered password is then hashed using the Node.js crypto library. Then, a unique user ID is generated, 
                                 and the user's ID, username, hashed password, first name and last name are stored in the database.
                                 Then, the user is "logged in" by adding this new user into a session, generating a session ID and a JSON-Web-Token, and then
-                                sending the JSON-Web-Token and Session ID back to the client in the form of a json. <br>
+                                sending the JSON-Web-Token and Session ID back to the client in the form of a JSON. <br>
                                 &emsp;The client is then sent to their home page and stores both the JSON-Web-Token and Session ID as cookies. 
-                                If the client makes any further api requests, it must present their JSON-Web-Token and Session ID, if either are missing or invalid, 
+                                If the client makes any further API requests, it must present their JSON-Web-Token and Session ID, if either are missing or invalid, 
                                 the user is sent to the login page and their cookies are removed.
                             </p>
                             <h5>Login Process:<hr></h5>
@@ -112,7 +112,7 @@
                                 the API call is stopped and a failure message with its corresponding error is sent back to the client. <br>
                                 &emsp;If a username in the database matches the entered username, the entered password is hashed using the Node.js crypto library, 
                                 and compared to the hashed password in the database. If these hashed passwords match, then the user is added to a session, 
-                                a session ID and JSON-Web-Token are generated and sent back to the client in the form of a json.
+                                a session ID and JSON-Web-Token are generated and sent back to the client in the form of a JSON.
                                 The client then stores this information in the form of cookies, which allows the client to verify itself, log in, and go to their home page.
 
                             </p>

@@ -530,6 +530,10 @@ body.dark_mode {
     margin-left: 90%;
     margin-top: 25px;
     grid-column: 2 / 3;
+
+    
+    background-color: #0f0f0ffa;
+    border-radius: 7px;
 }
 .openTodoContent hr {
     width: 20px;
@@ -750,26 +754,26 @@ img {
 
     #openNav {
         visibility: visible;
-        min-width: 35px;
-        height: 35px;
+        min-width: 40px;
+        width: 40px;
+        height: 40px;
+        min-height: 40px;
 
         position: absolute;
         left: 80%;
-        top: 33px;
+        top: 30px;
 
-        background-color: #1a1a1afa;
+        background-color: #0f0f0ffa;
+        border-radius: 7px;
         border: none;
     }
 
     #openNav hr {
-        border: 1px solid #006b7e;
-        height: 1px;
-        background-color: #006b7e;
-        color: #006b7e;
-        border-radius: 10px;
-        margin: 4px 0;
         width: 20px;
         min-width: 20px;
+        color: #006b7e;
+        border: 1px solid #006b7e;
+        background: transparent;
     }
 
 
