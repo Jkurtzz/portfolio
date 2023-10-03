@@ -28,3 +28,9 @@ function openNav() {
      }
      
 }
+
+// function to open info of todo app
+function openTodo() {
+     let todoNavBar = document.getElementsByClassName("todoContent")[0];
+     todoNavBar.classList.toggle("open");
+}
