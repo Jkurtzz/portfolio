@@ -754,7 +754,7 @@ img {
         height: 35px;
 
         position: absolute;
-        left: 307px;
+        left: 80%;
         top: 33px;
 
         background-color: #1a1a1afa;
@@ -817,7 +817,7 @@ img {
     /* main content section */
     .info {
         display: grid;
-        grid-template-columns: repeat(4, 97.5px);
+        grid-template-columns: 25% 25% 25% 25%;
         grid-template-rows: repeat(auto, 100px);
         min-height: 800px;
         height: 800px;
