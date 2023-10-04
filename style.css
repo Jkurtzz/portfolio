@@ -174,13 +174,14 @@ body.dark_mode {
 
         #profile {
             grid-column-start: 7;
-            grid-column-end: 10;
+            grid-column-end: 11;
             grid-row-start: 3;
             grid-row-end: 7;
 
-            height: 600px;
-            min-height: 600px;
-            width: auto;
+            height: auto;
+            width: 100%;
+            min-width: 280px;
+            max-width: 401px;
 
             padding: 4px;
 
@@ -225,6 +226,7 @@ body.dark_mode {
         }
         #skills hr {
             min-width: 750px;
+            width: 100%;
         }
             .reactSkill {
                 grid-column: 4 / 5;
@@ -405,10 +407,11 @@ body.dark_mode {
                 grid-row: 15 / 18;
                 font-family: 'Times New Roman', Times, serif;
                 font-size: +3;
-                min-width: 300px;
+                min-width: 200px;
+                margin-right: 11%;
 
                 display: grid;
-                grid-template-columns: 175px 625px;
+                grid-template-columns: 15% 85%;
                 grid-template-rows: 175px 250px;
             }
             
@@ -416,7 +419,7 @@ body.dark_mode {
                 grid-column: 1 / 2;
                 grid-row: 1 / 2; 
 
-                margin-left: 50px;
+                margin-left: 30%;
                 background-color: white;
                 border-radius: 100px;
                 width: 150px;
@@ -880,11 +883,14 @@ img {
         grid-column: 3 / -1;
         min-height: 100px;
         height: auto;
-        width: 185px;
-        max-width: 185px;
+        width: 85%;
+        max-width: 255px;
         min-width: 180px;
 
-        margin-left: -5px;
+        text-align: right;
+
+        /* margin-left: -5px; */
+        /* margin-right: 10%; */
         margin-top: 10px;
     }
 
@@ -1040,7 +1046,7 @@ img {
         margin-top: 20px;
 
         display: grid;
-        grid-template-columns: 100px 290px;
+        grid-template-columns: 20% 80%;
         grid-template-rows: 75px 300px;
     }
     
@@ -1048,7 +1054,7 @@ img {
         grid-column: 1 / 2;
         grid-row: 1 / 2; 
 
-        margin-left: 22px;
+        margin-left: 20%;
         background-color: white;
         border-radius: 100px;
         width: 75px;
@@ -1059,10 +1065,12 @@ img {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
 
-        margin: 25px 0px 0px 10px;
+        margin: 25px 0px 0px 7%;
         width: 100%;
         min-width: 100px;
         font-size: 20px;
+
+        text-align: left;
     }
 
     .eduContent {
@@ -1070,7 +1078,7 @@ img {
         grid-row: 2 / 3;
         margin-top: -5px;
         margin-left: 30px;
-        width: 350px;
+        width: 88%;
     }
 
     .education h2 {
