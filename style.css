@@ -408,7 +408,7 @@ body.dark_mode {
                 font-family: 'Times New Roman', Times, serif;
                 font-size: +3;
                 min-width: 200px;
-                margin-right: 11%;
+                /* margin-right: 11%; */
 
                 display: grid;
                 grid-template-columns: 15% 85%;
