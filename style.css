@@ -434,6 +434,7 @@ body.dark_mode {
                 grid-column: 2 / 3;
                 grid-row: 1 / 2;
                 margin-left: 80px;
+                width: 80%;
             }
             .eduContent {
                 grid-column: 2 / 4;
@@ -441,7 +442,7 @@ body.dark_mode {
 
                 margin-left: 80px;
                 margin-top: 80px;
-                width: 100%;
+                width: 80%;
                 min-width: 300px;
             }
             .education h2 {
