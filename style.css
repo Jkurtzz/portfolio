@@ -572,6 +572,7 @@ body.dark_mode {
     color: #006b7e;
     border: 1px solid #006b7e;
     background: transparent;
+    height: 0px;
 }
 
 .openTodoContent:active {
