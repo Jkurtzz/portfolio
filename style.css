@@ -587,7 +587,7 @@ body.dark_mode {
 .todoContent {
     height: 0px;
     overflow: hidden;
-    border-top: 1px solid #006b7e;
+    border-top: 0px solid #006b7e;
     border-bottom: 1px solid #006b7e;
     grid-column: 1 / 2;
     grid-row: 7 / 22;
@@ -601,6 +601,8 @@ body.dark_mode {
 
 .todoContent.open {
     height: 90%;
+    border-top: 1px solid #006b7e;
+    
 }
 
 .todoContent p {
