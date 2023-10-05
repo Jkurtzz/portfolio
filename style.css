@@ -212,6 +212,11 @@ body.dark_mode {
             font-size: 30px;
         }
 
+        .introMobile {
+            display: none;
+
+        }
+
 
         span {
             color: #006b7e;
@@ -868,6 +873,11 @@ img {
     }
 
     .intro {
+        display: none;
+    }
+
+    .introMobile {
+        display: block;
         grid-row: 3 / 5;
         grid-column: 1 / 3;
 
