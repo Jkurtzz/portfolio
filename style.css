@@ -197,7 +197,10 @@ body.dark_mode {
             font-size: 35px;
         }
         hr {
-            border-color: #006b7e;
+            /* border-color: #006b7e; */
+            background-color: #006b7e;
+            border: none;
+            height: 1px;
         }
         .intro {
             grid-column-start: 3;
@@ -805,7 +808,7 @@ img {
         min-width: 90%;
         color: #006b7e;
         border: 1px solid #006b7e;
-        background: transparent;
+        height: 0px;
     }
 
 
@@ -866,6 +869,7 @@ img {
         grid-row-end: 3;
         font-size: 20px;
         margin: 10px 5px 5px 10px;
+        
     }
     #first hr {
         margin-top: 5px;
@@ -1179,6 +1183,7 @@ img {
     .openTodoContent hr {
         min-width: 90%;
         width: 90%;
+        height: 0px;
     }
 
     .todoContent {
