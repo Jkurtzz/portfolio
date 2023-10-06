@@ -561,12 +561,12 @@ body.dark_mode {
     align-items: center;
     cursor: pointer;
     
-    background-color: #0f0f0ffa;
+    background-color: #161616fa;
     border-radius: 7px;
 }
 .openTodoContent hr {
-    width: 80%;
-    min-width: 80%;
+    width: 93%;
+    min-width: 93%;
     margin-top: 12%;
     margin-bottom: 12%;
     color: #006b7e;
@@ -804,14 +804,14 @@ img {
         left: 85%;
         top: 30px;
 
-        background-color: #0f0f0ffa;
+        background-color: #161616fa;
         border-radius: 7px;
         border: none;
     }
 
     #openNav hr {
-        width: 90%;
-        min-width: 90%;
+        width: 93%;
+        min-width: 93%;
         color: #006b7e;
         border: 1px solid #006b7e;
         height: 0px;
