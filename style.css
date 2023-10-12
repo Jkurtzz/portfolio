@@ -524,8 +524,13 @@ body.dark_mode {
     font-size: 35px;
     grid-row: 1 / 2;
     grid-column: 1 / -1;
-    margin-left: 75px;
+    /* margin-left: 75px; */
     min-width: 700px;
+    text-align: center;
+}
+
+#todoTitle h3 {
+    font-size: 30px;
 }
 
 .todoApp h4 {
@@ -1205,7 +1210,10 @@ img {
         font-size: 18px;
         grid-row: 1 / 2;
         grid-column: 1 / -1;
-        margin: -20px 0px 0px 20px;
+        margin: -20px 0px 0px 0px;
+    }
+    #todoTitle h3 {
+        font-size: 18px;
     }
 
     .todoApp h4 {
