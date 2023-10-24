@@ -64,8 +64,9 @@ body.dark_mode {
 
 .nav a {
     font-family: "Arial";
-    font-size: 14px;
-    border: 1px solid #006b7e;
+    font-size: 16px;
+    /* border: 1px solid #006b7e; */
+    
     
     margin-left: 20px;
     margin-right: 20px;
@@ -77,7 +78,7 @@ body.dark_mode {
 
     color: white;
     background-color: transparent;
-    box-shadow: 0px 0px 6px #006b7e;
+    /* box-shadow: 0px 0px 6px #006b7e; */
     text-decoration: none;
 
     /* puts text in center of btn */
@@ -88,17 +89,36 @@ body.dark_mode {
     
 }
 
+.nav a hr {
+    height: 2px;
+    width: 0px;
+    position: absolute;
+    top: 57px;
+    box-shadow: 0px 0px 6px #006b7e;
+    transition: width 0.5s ease;
+}
+
 .nav a:hover {
-    background-color: #006b7e;
+    /* background-color: #006b7e; */
+    /* box-shadow: 0px 6px 6px #006b7e; */
     color: white;
     transition: 0.5s ease;
 }
 
+.nav a:hover hr {
+    width: 100px;
+}
+
 .nav .active {
-     /* original color: rgb(39, 150, 224), #005d6e */
-    background-color: #006b7e;
-    transition: background-color 0.5s ease;
+    /* original color: rgb(39, 150, 224), #005d6e */
+    /* background-color: #006b7e; */
+    /* box-shadow: 0px 0px 2px #006b7e; */
+
     color: white;
+}
+
+.nav .active hr {
+    width: 100px;
 }
 
 /* The switch - the box around the slider */
@@ -840,6 +860,10 @@ img {
         grid-column: 1 / 2;
         height: 100%;
         min-height: 41px;
+    }
+
+    .nav a hr {
+        display: none;
     }
 
     .nav .active {
